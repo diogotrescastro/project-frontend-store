@@ -1,0 +1,221 @@
+.detail-header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  height: 80px;
+}
+
+.detail-header a:link {
+  text-decoration: none;
+}
+
+.detail-product {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10%;
+  height: fit-content;
+  min-height: 200x;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-img {
+  height: fit-content;
+  width: fit-content;
+  padding-right: 40px;
+}
+
+.product-img img {
+  height: 200px;
+}
+
+.add-cart-detail {
+  background: rgb(88,131,255);
+  background: linear-gradient(90deg, rgba(1,245,189,1) 0%, rgba(88,131,255,1) 100%);
+	border-radius: 15px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:5px;
+  width: 220px;
+	text-decoration:none;
+  font-size: large;
+  font-weight:bold;
+}
+
+.item-price {
+  font-size: x-large;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(left, rgba(214,31,143,1), rgba(255,68,64,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+
+.form-avaliation {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 20px 10%;
+  padding: 20px 20px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.form-email input {
+  padding: 7px;
+  font-size: 14px;
+  border-width: 0px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: hidden;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.30);
+  margin: 10px;
+  width: 400px;
+  
+}
+
+.text-area textarea {
+  padding: 7px;
+  font-size: 14px;
+  border-width: 0px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.30);
+  margin: 10px;
+  width: 400px;
+}
+
+.rating-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.avaliate {
+  background: rgba(214,31,143,1);
+  background: linear-gradient(90deg, rgba(214,31,143,1) 0%, rgba(255,68,64,1) 100%);
+	border-radius: 15px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:5px;
+  width: 100px;
+  margin: 20px;
+	text-decoration:none;
+  font-size: large;
+  font-weight:bold;
+}
+
+.avaliations {
+  width: 100%;
+}
+
+.avaliations h3 {
+  text-align: center;
+}
+
+.user-comment {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 15px;
+  display: flex;
+  height: fit-content;
+  margin: 20px 10%;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.comment-info {
+  margin-left: 10px;
+}
+
+.comment-info p {
+  margin: 5px 0;
+}
+
+.user-img {
+  width: 80px;
+}
+
+.star-cb-group {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  /* the hidden clearer */
+}
+.star-cb-group * {
+  font-size: 2rem;
+}
+.star-cb-group > input {
+  display: none;
+}
+.star-cb-group > input + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "☆";
+  color: #888;
+}
+.star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+  content: "★";
+  color: rgba(255,68,64,1);
+  text-shadow: 0 0 1px #333;
+}
+.star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: .5em;
+  margin-left: -.5em;
+}
+.star-cb-group > .star-cb-clear + label:before {
+  width: .5em;
+}
+.star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: #888;
+  text-shadow: none;
+}
+.star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: rgba(255,68,64,1);
+  text-shadow: 0 0 1px #333;
+}
+
+.comment-rate {
+  color: rgba(255,68,64,1);
+  text-shadow: 0 0 1px #333;
+  font-size: 1em;
+  letter-spacing: -0.1em;
+}
